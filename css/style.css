@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 .h1 {
-  
+
 }
 
 .h2 {
@@ -12,18 +12,25 @@
 
 .wrapper{
   display: grid;
-  grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
-  grid-template-rows:  100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+  grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+  grid-template-rows:  100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
   grid-gap: 1px;
+
 }
 
+#my-svg{
+  grid-column-start: 5;
+}
+
+
 .box {
+  /*border: solid 2px black;*/
 
 }
 /* el conteo es por lineas, no por filas o columnas */
 .one {
-  grid-column-start: 3;
-  grid-row-start: 2;
+  grid-column-start: 4;
+  grid-row-start: 8;
 
 }
 
@@ -33,22 +40,24 @@
   font-size: 20px;
   background-color: rgb(255, 198, 211);
   grid-column: 2 / 6;
-  grid-row: 3 / 7;
+  grid-row: 9 / 13;
 
 }
 
 .three {
   /*grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end;*/
-  grid-area: 2 / 3 / 3 /4;
+  color: gray;
+  font-size: 30px;
+  grid-area: 2 / 2 / 3 /12;
 }
 .four {
-  /*grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end;*/
-  grid-area: 1 / 4 / 4 /5;
+  grid-column-start: 5;
+  grid-row-start: 4;
 }
 
 .five {
-  grid-column-start: 3;
-  grid-row-start: 4;
+  grid-column-start: 5;
+  grid-row-start: 14;
 }
 
 .six {
