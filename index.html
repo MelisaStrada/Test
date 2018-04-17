@@ -49,40 +49,30 @@
 
 
 
-      <div class="foo"> Foo </div>
-      <div class="bar"> Bar </div>
-
-
-
-
-
-
-
      <div class="wrapper">
-             <div class="box one">
-               <img src="https://static1.squarespace.com/static/586e9d11893fc02022f22423/t/58ac9a608419c27e24f0ac87/1487706849997/6.png" alt="imagen slimesunday chava" height="500px">
-
+             <div class="gifportafolioindex">
+               <img src="images/gifindex1.gif" alt="gif portafolio" height="550px">
              </div>
 
-             <div class="box two">
+             <div class="portafoliolink">
               <h2>four degrees</h2>
               <p>agency portfolio</p>
-
+              <p class="viewmouseover">view</p>
              </div>
 
-             <div class="box three">
+             <div class="hello">
               <p>Hello. 4º is a digital agency in Leeds and London. We design and build websites and apps, write engaging content, make bespoke software, get friendly with search engines and turn our hands to all kinds of design, development and digital marketing.</p>
 
              </div>
 
 
-             <div class="box four" >
-              <img src="images/degree1.png"  alt="dibujo1">
+             <div class="separador1" >
+              <img src="images/degree1.png"  alt="dibujo1" >
 
              </div>
 
 
-             <div class="box five" >
+             <div class="separador2" >
               <img src="images/degree2.png"  alt="dibujo2">
 
              </div>
@@ -145,6 +135,23 @@
 -->
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.3/vivus.js"></script>
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+<script type="text/javascript">
+window.sr = ScrollReveal();
+sr.reveal('.gifportafolioindex',{ duration: 500 });
+sr.reveal('.portafoliolink',{ duration: 900 });
+
+
+</script>
+
+<script type="text/javascript">
+$(".viewmouseover").mouseover(function(){
+  $(".viewmouseover").css("background-color", "yellow");
+});
+</script>
+
+
   <script>
     var myVivus = new Vivus('my-svg');
     myVivus.play(1, function(){
@@ -153,7 +160,7 @@
     })
   </script>
 
-  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
 
 </body>
 

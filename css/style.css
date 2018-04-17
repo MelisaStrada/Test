@@ -23,18 +23,19 @@
 }
 
 
+
 .box {
   /*border: solid 2px black;*/
 
 }
 /* el conteo es por lineas, no por filas o columnas */
-.one {
+.gifportafolioindex {
   grid-column-start: 4;
   grid-row-start: 8;
 
 }
 
-.two {
+.portafoliolink {
   padding: 70px;
   color: white;
   font-size: 20px;
@@ -44,18 +45,18 @@
 
 }
 
-.three {
+.hello {
   /*grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end;*/
   color: gray;
   font-size: 30px;
   grid-area: 2 / 2 / 3 /12;
 }
-.four {
+.separador1 {
   grid-column-start: 5;
   grid-row-start: 4;
 }
 
-.five {
+.separador2 {
   grid-column-start: 5;
   grid-row-start: 14;
 }
