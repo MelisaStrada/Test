@@ -103,8 +103,8 @@ textarea{
     vertical-align: top;
     overflow: hidden;
     position: relative;
-    font-family: GT-Pressura-Mono,Courier,monospace;
-    font-size: .88889rem;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1em;
     line-height: 1.4;
     text-align: center;
     padding: 29px 54px;
@@ -117,7 +117,6 @@ textarea{
     background-position: 0 0;
     transition: color .3s,background-position .3s,box-shadow .3s;
 }
-
 
 
 .wrapper{
