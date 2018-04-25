@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+body {
+  font-family: 'Titillium Web', sans-serif;
+}
+
 .h1 {
 
 }
@@ -45,6 +49,16 @@
 
 }
 
+.viewmouseover {
+  padding-top: 130px;
+}
+
+.readmouseover {
+  font-size: 20px;
+}
+
+
+
 .hello {
   /*grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end;*/
   color: gray;
@@ -64,3 +78,74 @@
 .six {
 
 }
+
+.contact{
+  grid-column-start: 3;
+  grid-row-start: 17;
+  background-color: pink;
+	/*box-shadow: 0 15px 30px 1px rgba(128, 128, 128, 0.31);*/
+	text-align: center;
+	margin: 3em auto;
+	background: rgba(255, 255, 255, 0.95);
+	height: 500px;
+	width: 800px;
+	padding: 1em;
+
+
+}
+
+.contact h2 {
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size:cover;
+	letter-spacing: 2px;
+	font-size: 3.5em;
+	margin: 0;
+
+}
+
+.contact h3 {
+	padding: 10px;
+	font-size: 30px;
+	color: #7d7d7d;
+}
+
+.contact p {
+	margin: 3px 0 1.5em 0;
+	font-size: 1.3em;
+	color: #7d7d7d;
+}
+
+.contact input {
+/* 	background: rgba(255, 13, 254, 0.90); */
+	width: 210px;
+	display: inline-block;
+	text-align: center;
+	border-radius: 7px;
+	background: #eee;
+	padding: 1em 2em;
+	outline: none;
+	border: none;
+	color: #222;
+	transition: 0.3s linear;
+}
+::placeholder{color: #999;}
+.contact input:focus {background: white;}
+
+.contact button {
+	background-image: linear-gradient(to left, #f1b7e4 0%, #f5bbae 100%);
+	box-shadow: 0 9px 25px -5px gray;
+	padding: 0.5em 1.9em;
+	margin: 2.3em 0 0 0;
+	border-radius: 7px;
+	font-size: 1.4em;
+	cursor: pointer;
+	color: #FFFFFF;
+	font-size: 1em;
+	outline: none;
+	border: none;
+	transition: 0.3s linear;
+
+}
+.contact button:hover{transform: translatey(2px);}
+.contact button:active{transform: translatey(5px);}
