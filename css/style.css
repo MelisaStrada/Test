@@ -5,11 +5,6 @@ html {
   box-sizing: inherit;
 }
 
-body {
-	font-family: 'Titillium Web', sans-serif;
-	font-weight: 400;
-}
-
 textarea, input {
 	-webkit-appearance: none;
     -moz-appearance: none;
@@ -32,7 +27,7 @@ textarea{
 
 .form-label {
 	font-size: 20px;
-	color: ##510093;
+	color: white;
 	margin: 0;
 	display: block;
 	opacity: 1;
@@ -42,40 +37,23 @@ textarea{
 }
 .form-control {
 	border-radius: 0;
-	border-color: #ccc;
+	border-color: white;
    	border-width: 0 0 2px 0;
    	border-style: none none solid none;
    	box-shadow: none;
 }
 .form-control:focus {
 	box-shadow: none;
-	border-color: #5e9bfc;
+	border-color: white;
 }
 .js-hide-label {
 	opacity: 0;
 }
 .js-unhighlight-label {
-	color: #ff9494
-}
-.btn-start-order {
-	background: 0 0 #ffffff;
-    border: 1px solid #ff9494;
-    border-radius: 3px;
-    color: #white;
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 20px;
-    line-height: inherit;
-    margin: 30px 0;
-    padding: 10px 50px;
-    text-transform: uppercase;
-    transition: all 0.25s ease 0s;
-}
-.btn-start-order:hover,.btn-start-order:active, .btn-start-order:focus {
-	border-color: ##510093;
-	color: ##ff9494;
+	color: white
 }
 
-#contact-form {
+/*#contact-form {
 	padding: 15px;
 	font-family: 'Titillium Web', sans-serif;
 	color: white;
@@ -98,24 +76,169 @@ textarea{
     cursor: pointer;
 	}
 
-	.btn {
-    display: inline-block;
-    vertical-align: top;
-    overflow: hidden;
-    position: relative;
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 1em;
-    line-height: 1.4;
-    text-align: center;
-    padding: 29px 54px;
-    border: 0;
-    border-radius: 0;
-    outline: 0;
-    background-color: transparent;
-    background-size: 100% 200%;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    transition: color .3s,background-position .3s,box-shadow .3s;
+  .btn {
+      display: inline-block;
+      vertical-align: top;
+      overflow: hidden;
+      position: relative;
+      font-family: 'Titillium Web', sans-serif;
+      font-size: 1em;
+      line-height: 1.4;
+      text-align: center;
+      width: 150px;
+      padding: 30px 45px;
+      border: 0;
+      border-radius: 0;
+      outline: 0;
+      background-color: transparent;
+      background-size: 100% 200%;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      transition: color .3s,background-position .3s,box-shadow .3s;
+  }*/
+
+  body {
+  background: #ff9494;
+  font-size: 62.5%;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
+  color: #ff9494;
+}
+
+body section {
+  background: #ff9494;
+  margin: 60px auto 120px;
+  border-top: 15px solid #313A3D;
+  border-color: white;
+  text-align: center;
+  padding: 50px 0 110px;
+  width: 80%;
+  max-width: 1100px;
+}
+body section h1 {
+  margin-bottom: 40px;
+  font-size: 4em;
+  text-transform: uppercase;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 100;
+  color: white;
+}
+
+form {
+  width: 58.3333333333%;
+  margin: 0 auto;
+}
+form .field {
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+}
+form .field label {
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: white;
+  width: 100%;
+  padding: 18px 0;
+  font-size: 1.45em;
+  letter-spacing: 0.075em;
+  -webkit-transition: all 333ms ease-in-out;
+  -moz-transition: all 333ms ease-in-out;
+  -o-transition: all 333ms ease-in-out;
+  -ms-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+}
+form .field label + span {
+  opacity: 0;
+  color: white;
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: 7%;
+  font-size: 2.5em;
+  text-shadow: 1px 2px 0 #cd6302;
+  -webkit-transition: all 333ms ease-in-out;
+  -moz-transition: all 333ms ease-in-out;
+  -o-transition: all 333ms ease-in-out;
+  -ms-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+}
+form .field input[type="text"],
+form .field textarea {
+  border: none;
+  background: #E8E9EA;
+  width: 80.5%;
+  margin: 0;
+  padding: 18px 0;
+  padding-left: 19.5%;
+  color: #313A3D;
+  font-size: 1.4em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+form .field input[type="text"]#msg,
+form .field textarea#msg {
+  height: 18px;
+  resize: none;
+  -webkit-transition: all 333ms ease-in-out;
+  -moz-transition: all 333ms ease-in-out;
+  -o-transition: all 333ms ease-in-out;
+  -ms-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+}
+form .field input[type="text"]:focus, form .field input[type="text"].focused,
+form .field textarea:focus,
+form .field textarea.focused {
+  outline: none;
+}
+form .field input[type="text"]:focus#msg, form .field input[type="text"].focused#msg,
+form .field textarea:focus#msg,
+form .field textarea.focused#msg {
+  padding-bottom: 150px;
+}
+form .field input[type="text"]:focus + label, form .field input[type="text"].focused + label,
+form .field textarea:focus + label,
+form .field textarea.focused + label {
+  width: 18%;
+  background: #FD9638;
+  color: #313A3D;
+}
+form .field input[type="text"].focused + label,
+form .field textarea.focused + label {
+  color: #FD9638;
+}
+form .field:hover label {
+  width: 18%;
+  background: #313A3D;
+  color: white;
+}
+form input[type="submit"] {
+  background: #ffffff;
+  color: #ff9494;
+  -webkit-appearance: none;
+  border: none;
+  text-transform: uppercase;
+  position: relative;
+  padding: 13px 50px;
+  margin-top: 10px;
+  font-size: 1.4em;
+  letter-spacing: 0.1em;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
+  -webkit-transition: all 333ms ease-in-out;
+  -moz-transition: all 333ms ease-in-out;
+  -o-transition: all 333ms ease-in-out;
+  -ms-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+}
+form input[type="submit"]:hover {
+  background: #313A3D;
+  color: #FD9638;
+}
+form input[type="submit"]:focus {
+  outline: none;
+  background: #cd6302;
 }
 
 
