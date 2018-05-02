@@ -22,8 +22,16 @@ body {
 
 }
 
+.logo {
+  display: flex;
+  justify-content: center;
+  height: 400px;
+}
+
+
 #my-svg{
   grid-column-start: 5;
+
 }
 
 
@@ -51,10 +59,12 @@ body {
 
 .viewmouseover {
   padding-top: 130px;
+  text-decoration: none;
 }
 
 .readmouseover {
   font-size: 20px;
+  text-decoration: none;
 }
 
 
@@ -65,6 +75,13 @@ body {
   font-size: 30px;
   grid-area: 2 / 2 / 3 /12;
 }
+
+ a:hover, a:visited, a:link, a:active {
+  text-decoration: none !important;
+  color: inherit;
+
+}
+
 .separador1 {
   grid-column-start: 5;
   grid-row-start: 4;
@@ -89,7 +106,7 @@ body {
 	background: rgba(255, 255, 255, 0.95);
 	height: 500px;
 	width: 800px;
-	padding: 1em;
+	/*padding: 1em;*/
 
 
 }
@@ -121,19 +138,44 @@ body {
 	width: 210px;
 	display: inline-block;
 	text-align: center;
-	border-radius: 7px;
+	border-radius: 7px 0px 0px 7px;
 	background: #eee;
 	padding: 1em 2em;
+	outline: none;
+	border: 5px;
+	color: #222;
+	transition: 0.3s linear;
+}
+::placeholder{color: #999;}
+.contact input:focus {background: white; border-color: gray;}
+
+.contact button {
+  width: 80px;
+	display: inline-block;
+	text-align: center;
+	border-radius: 0px 7px 7px 0px;
+	background: #cccccc;
+	padding: 1em 1em;
 	outline: none;
 	border: none;
 	color: #222;
 	transition: 0.3s linear;
 }
-::placeholder{color: #999;}
-.contact input:focus {background: white;}
+.contact button:hover{transform: translatex(2px);}
+.contact button:active{transform: translatex(5px);}
 
-.contact button {
+.contact form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+.contact .contactbutton {
 	background-image: linear-gradient(to left, #f1b7e4 0%, #f5bbae 100%);
+  width: 210px;
+	display: inline-block;
+	text-align: center;
 	box-shadow: 0 9px 25px -5px gray;
 	padding: 0.5em 1.9em;
 	margin: 2.3em 0 0 0;
@@ -147,5 +189,5 @@ body {
 	transition: 0.3s linear;
 
 }
-.contact button:hover{transform: translatey(2px);}
-.contact button:active{transform: translatey(5px);}
+.contact .contactbutton:hover{transform: translatey(2px);}
+.contact .contactbutton:active{transform: translatey(5px);}
