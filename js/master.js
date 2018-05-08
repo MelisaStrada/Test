@@ -1,3 +1,5 @@
+
+
 // Input Lock
 $('textarea').blur(function () {
     $('#hire textarea').each(function () {
