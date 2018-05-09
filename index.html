@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200,300,400,600,700,900" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+
 
 
 
@@ -15,17 +17,52 @@
 
 
   <body>
-    <div class="container">
 
-      <div class="box1">
-      <h1> We are a digital agency that helps brands create <br> meaningful experiences through design.</h1>
-      </div>
 
-      <div class="box2">
-      <img id="image1" src="images/image1.jpg" alt="designer">
-      </div>
+        <div class="wrapper">
 
-    </div>
+            <div class="box1">
+            <h1> We are a digital agency that helps brands create meaningful experiences through design.</h1>
+            </div>
+
+
+            <div class="box2">
+            <img id="image1" src="images/image1.jpg" alt="designer">
+            </div>
+
+
+            <div class="box3">
+            <h2> From the very beginning, we only ever had one plan – to make a bunch of really cool things people actually found useful. And so, over the years, we’ve grown our talented team of developers, designers and marketers to continue this goal, tapping into new technologies and playing around with cutting-edge solutions. And what’s more, we’re only just getting started..</h2>
+            </div>
+
+
+            <div class="box4">
+            <img id="image2" src="images/image2.jpg" alt="designer">
+            </div>
+
+            <div class="item4">
+            <h3> All work.</h3>
+            <p>We see every project as a fresh opportunity – we approach each and every one from an exciting new angle. Thanks to our culture of teamwork and collaboration, we’re able to take complex concepts and make them a reality, channeling our talents to be as effective as possible for our clients. Just because something is designed to be useful, doesn’t mean it can’t be beautiful or fun too. If you bring us an idea, we’ll bring it to life. <br> <br> <br> <br>  </p>
+            </div>
+
+
+            <div class="box5">
+            <img id="image3" src="images/image3.jpg" alt="image3">
+            </div>
+
+            <div class="item5">
+            <h4> All play.</h4>
+            <p>We’ve always believed work should be stimulating. That’s how we ended up building a talented team of real human beings propelled by their own passions. We encourage everyone to use their favourite skills, learn on the job and work on what gives them pleasure. And we have a relaxed space to do all this, with perks like flexible working hours, gaming breaks, hack days, social lunches, great coffee and beer on tap. Life’s too short for work to be boring.  <br> <br> <br>   </p>
+            </div>
+<!--
+            <div class="box6">
+            <img id="image4" src="images/image4.jpg" alt="image4">
+            </div> -->
+
+        </div>
+
+
+
 
 
 
@@ -35,5 +72,21 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+    <script type="text/javascript">
+      window.sr = ScrollReveal();
+      sr.reveal('.box1',{ duration: 500 });
+      sr.reveal('.box2',{ duration: 900 });
+      sr.reveal('.box3',{ duration: 900 });
+      sr.reveal('.box4',{ duration: 500 });
+      sr.reveal('.box5',{ duration: 900 });
+      sr.reveal('.box6',{ duration: 900 });
+
+</script>
+
+
+
   </body>
 </html>
