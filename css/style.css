@@ -34,9 +34,7 @@ body {
 
 
 #my-svg{
-
   grid-row: auto;
-
 }
 
 /*
@@ -85,7 +83,6 @@ div {border: solid 2px black;}*/
  a:hover, a:visited, a:link, a:active {
   text-decoration: none !important;
   color: inherit;
-
 }
 
 .separador1 {
@@ -98,22 +95,15 @@ div {border: solid 2px black;}*/
   grid-row-start: 18;
 }
 
-.six {
-
-}
-
 .contact{
   grid-column-start: 3;
   grid-row-start: 21;
   background-color: pink;
-	/*box-shadow: 0 15px 30px 1px rgba(128, 128, 128, 0.31);*/
 	text-align: center;
 	margin: 3em auto;
 	background: rgba(255, 255, 255, 0.95);
 	height: 500px;
 	width: 800px;
-	/*padding: 1em;*/
-
 
 }
 
@@ -281,4 +271,196 @@ html{
 	box-shadow: inset 0 0 0 3px #f1b7e4;
 
 	color: #f1b7e4;
+}
+
+
+.menu{
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 25px;
+  color: black;
+  grid-row-start: 2;
+  grid-column-start: 12;
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  text-align: right;
+}
+
+
+.menu li a{
+	width: 40px;
+	height: 40px;
+  padding-top: 8px;
+}
+
+.menu li a:hover{
+
+	color: #f1b7e4;
+}
+
+
+
+/*Diseño responsivo*/
+
+/*Tablet*/
+@media (max-width: 768px) {
+
+    .wrapper{
+      display: grid;
+      grid-template-columns: 100px 100px 100px 100px 100px 100px ;
+      grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+      grid-gap: 3px;
+    }
+
+    .logo {
+      grid-column-start: 2;
+      grid-row: 1;
+      height: 200px;
+    }
+
+    #my-svg{
+      grid-row: auto;
+    }
+
+    .separador1, .separador2 {
+      display: none;
+    }
+
+    .hello {
+      /*grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end;*/
+      font-size: 25px;
+      grid-area: 6 / 2 / 8 / 7;
+    }
+
+    .gifportafolioindex {
+      grid-column: 1;
+      grid-row: 10 / 15;
+    }
+
+    .portafoliolink {
+      padding: 60px;
+      color: white;
+      font-size: 20px;
+      background-color: rgb(255, 198, 211);
+      grid-column: 1 / 4;
+      grid-row: 10 / 13;
+    }
+
+    .portafoliolink h2 {
+      font-size: 30px;
+    }
+
+    .viewmouseover {
+      padding-top: 50px;
+      text-decoration: none;
+    }
+
+    .contact{
+      grid-column-start: 1;
+      grid-row-start: 16;
+    	margin: 2em auto;
+    	height: 450px;
+    	width: 700px;
+
+    }
+
+    .contact h2 {
+    	letter-spacing: 2px;
+    	font-size: 40px;
+    	margin: 0;
+    }
+
+    .contact h3 {
+    	padding: 10px;
+    	font-size: 20px;
+    }
+
+    .contact p {
+    	margin: 3px 0 1.5em 0;
+    	font-size: 15px;
+    }
+
+    .social{
+      grid-row-start: 1;
+      margin-top: 50px;
+      padding: .3em;
+    }
+
+
+
+    .menu{
+      font-size: 25px;
+      color: black;
+      grid-row-start: 2;
+      grid-column-start: 12;
+      position: sticky;
+      display: flex;
+      flex-direction: column;
+      list-style-type: none;
+      text-align: right;
+    }
+
+
+    .menu li a{
+    	width: 40px;
+    	height: 40px;
+      padding-top: 8px;
+    }
+
+
+
+}
+
+
+
+
+/*Celular*/
+@media (max-width: 375px) {
+
+  .wrapper{
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px ;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+    grid-gap: 1px;
+  }
+
+  .logo {
+    grid-column-start: 2;
+    grid-row-start: 1 / 2;
+    height: 50px;
+  }
+
+  #my-svg{
+    grid-row: auto;
+  }
+
+  .separador1, .separador2 {
+    display: none;
+  }
+
+  .hello {
+    /*grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end;*/
+    font-size: 25px;
+    grid-area: 6 / 1 / 8 / 5;
+  }
+
+  .gifportafolioindex {
+    grid-column: 1;
+    grid-row: 10 / 15;
+  }
+
+  .portafoliolink {
+    padding: 60px;
+    color: white;
+    font-size: 20px;
+    background-color: rgb(255, 198, 211);
+    grid-column: 1 / 4;
+    grid-row: 10 / 13;
+  }
+
+
+
+
+
 }
