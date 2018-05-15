@@ -243,7 +243,7 @@ html{
 	height: 40px;
 	margin: 1em;
   margin-right: 1rem;
-  padding-top: 8px;
+  padding-top: 9px;
 	text-align: center;
 
 
@@ -274,15 +274,21 @@ html{
 }
 
 
+/* Menú */
+
+
 .menu{
   font-family: 'Titillium Web', sans-serif;
   font-size: 25px;
   color: black;
-  grid-row-start: 2;
-  grid-column-start: 12;
-  position: sticky;
-  display: flex;
-  flex-direction: column;
+  /* grid-row-start: 2;
+  grid-column-start: 12;*/
+  position: fixed;
+  position: -webkit-fixed;
+  right: 0;
+  padding-left: 70%;
+  padding-right: 10%;
+  padding-top: 120px;
   list-style-type: none;
   text-align: right;
 }
