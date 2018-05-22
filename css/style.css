@@ -1,115 +1,15 @@
-html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-textarea, input {
-	-webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border: 0;
-    border-radius: 0;
-    font-size: 16px;
-    line-height: 1;
-    height: 50px;
-		width: 300px;
-    padding: 1em;
-    color: white;
-    background: 0 0;
-}
-
-textarea{
-	width: 500px;
-}
-
-.form-label {
-	font-size: 20px;
-	color: white;
-	margin: 0;
-	display: block;
-	opacity: 1;
-	padding-top: 20px;
-	-webkit-transition: .333s ease top, .333s ease opacity;
-	transition: .333s ease top, .333s ease opacity;
-}
-.form-control {
-	border-radius: 0;
-	border-color: white;
-   	border-width: 0 0 2px 0;
-   	border-style: none none solid none;
-   	box-shadow: none;
-}
-.form-control:focus {
-	box-shadow: none;
-	border-color: white;
-}
-.js-hide-label {
-	opacity: 0;
-}
-.js-unhighlight-label {
-	color: white
-}
-
-/*#contact-form {
-	padding: 15px;
-	font-family: 'Titillium Web', sans-serif;
-	color: white;
-}
-
-.btn.-white {
-    color: #fff;
-    background-image: linear-gradient(to bottom,transparent 0,transparent 50%,#fff 50%,#fff 100%);
-    box-shadow: inset 0 0 0 2px rgba(255,255,255,.3);
-	}
-
-	.-split-modal-active .btn, .body--cloud .btn, .body--white .btn, .btn.-primary {
-    color: #8b5cdd;
-    background-image: linear-gradient(to bottom,transparent 0,transparent 50%,#8b5cdd 50%,#8b5cdd 100%);
-    box-shadow: inset 0 0 0 2px rgba(139,92,221,.3);
-	}
-
-	button, html input[type=button], input[type=reset], input[type=submit] {
-    -webkit-appearance: button;
-    cursor: pointer;
-	}
-
-  .btn {
-      display: inline-block;
-      vertical-align: top;
-      overflow: hidden;
-      position: relative;
-      font-family: 'Titillium Web', sans-serif;
-      font-size: 1em;
-      line-height: 1.4;
-      text-align: center;
-      width: 150px;
-      padding: 30px 45px;
-      border: 0;
-      border-radius: 0;
-      outline: 0;
-      background-color: transparent;
-      background-size: 100% 200%;
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      transition: color .3s,background-position .3s,box-shadow .3s;
-  }*/
-
-  body {
+body {
   background: #ff9494;
   font-size: 62.5%;
   font-family: 'Titillium Web', sans-serif;
   font-weight: 300;
   color: #ff9494;
 }
-
 body section {
   background: #ff9494;
   margin: 60px auto 120px;
   border-top: 15px solid #313A3D;
-  border-color: white;
-  text-align: center ;
+  text-align: center;
   padding: 50px 0 110px;
   width: 80%;
   max-width: 1100px;
@@ -120,7 +20,10 @@ body section h1 {
   text-transform: uppercase;
   font-family: 'Titillium Web', sans-serif;
   font-weight: 100;
-  color: white;
+}
+h1{
+  color: #ffffff;
+
 }
 
 form {
@@ -149,14 +52,15 @@ form .field label {
   transition: all 333ms ease-in-out;
 }
 form .field label + span {
+  font-family: 'Titillium Web', sans-serif;
   opacity: 0;
-  color: white;
+  color: #ff9494;
   display: block;
   position: absolute;
   top: 12px;
   left: 7%;
   font-size: 2.5em;
-  text-shadow: 1px 2px #ff9494;
+  text-shadow: 1px 2px 0 #cd6302;
   -webkit-transition: all 333ms ease-in-out;
   -moz-transition: all 333ms ease-in-out;
   -o-transition: all 333ms ease-in-out;
@@ -167,7 +71,7 @@ form .field input[type="text"],
 form .field textarea {
   border: none;
   background: #ffffff;
-  width: 100%;
+  width: 80.5%;
   margin: 0;
   padding: 18px 0;
   padding-left: 19.5%;
@@ -178,7 +82,7 @@ form .field textarea {
 }
 form .field input[type="text"]#msg,
 form .field textarea#msg {
-  height: 55px;
+  height: 18px;
   resize: none;
   -webkit-transition: all 333ms ease-in-out;
   -moz-transition: all 333ms ease-in-out;
@@ -194,7 +98,7 @@ form .field textarea.focused {
 form .field input[type="text"]:focus#msg, form .field input[type="text"].focused#msg,
 form .field textarea:focus#msg,
 form .field textarea.focused#msg {
-  padding-bottom: 100px;
+  padding-bottom: 150px;
 }
 form .field input[type="text"]:focus + label, form .field input[type="text"].focused + label,
 form .field textarea:focus + label,
@@ -209,8 +113,7 @@ form .field textarea.focused + label {
 }
 form .field:hover label {
   width: 18%;
-  background: #313A3D;
-  font-family: 'Titillium Web', sans-serif;
+  background: #ff9494;
   color: white;
 }
 form input[type="submit"] {
@@ -221,11 +124,9 @@ form input[type="submit"] {
   text-transform: uppercase;
   position: relative;
   padding: 13px 50px;
-  margin-top: 10px;
-  font-size: 1.5em;
-  letter-spacing: 0.1em;
+  font-size: 1.4em;
   font-family: 'Titillium Web', sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   -webkit-transition: all 333ms ease-in-out;
   -moz-transition: all 333ms ease-in-out;
   -o-transition: all 333ms ease-in-out;
@@ -238,64 +139,24 @@ form input[type="submit"]:hover {
 }
 form input[type="submit"]:focus {
   outline: none;
-  background: #ffffff;
+  background: #ff9494;
 }
-.wrapper{
-  display: grid;
-  grid-template-columns: 50vw 50vw;
-  grid-gap: 5px;
-	width: 100%;
-	height: 100%;
-}
+.google-maps {
+      position: relative;
+      padding-bottom: 40%; // This is the aspect ratio
+      height: 0;
+      overflow: hidden;
+  }
+  .google-maps iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100% !important;
+      height: 100% !important;
+  }
 
-.contacto {
-  background-color: #ff9494;
-}
 
-.ubicacion {
-  background-color: white;
-}
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 80%;
-	font: inherit;
-	vertical-align: text-center;
-  font-family: 'Titillium Web', sans-serif;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  a:hover, a:visited, a:link, a:active {
+  text-decoration: none !important;
+  color: inherit;
 }
