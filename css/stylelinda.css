@@ -1,0 +1,277 @@
+body {
+  background: #ff9494;
+  font-size: 62.5%;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
+  color: #ff9494;
+}
+body section {
+  background: #ff9494;
+  margin: 60px auto 120px;
+  border-top: 15px solid #313A3D;
+  text-align: center;
+  padding: 50px 0 110px;
+  width: 90%;
+  max-width: 1100px;
+}
+body section h1 {
+  margin-bottom: 40px;
+  font-size: 4em;
+  text-transform: uppercase;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 100;
+}
+h1{
+  color: #ffffff;
+
+}
+
+form {
+  width: 58.3333333333%;
+  margin: 0 auto;
+}
+form .field {
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+}
+form .field label {
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  width: 100%;
+  padding: 18px 0;
+  font-size: 1.45em;
+  letter-spacing: 0.075em;
+  -webkit-transition: all 333ms ease-in-out;
+  -moz-transition: all 333ms ease-in-out;
+  -o-transition: all 333ms ease-in-out;
+  -ms-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+}
+form .field label + span {
+  font-family: 'Titillium Web', sans-serif;
+  opacity: 0;
+  color: #ff9494;
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: 7%;
+  font-size: 2.5em;
+  text-shadow: 1px 2px 0 #cd6302;
+  -webkit-transition: all 333ms ease-in-out;
+  -moz-transition: all 333ms ease-in-out;
+  -o-transition: all 333ms ease-in-out;
+  -ms-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+}
+form .field input[type="text"],
+form .field textarea {
+  border: none;
+  background: #ffffff;
+  width: 80.5%;
+  margin: 0;
+  padding: 18px 0;
+  padding-left: 19.5%;
+  color: #ff9494;
+  font-size: 1.4em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+form .field input[type="text"]#msg,
+form .field textarea#msg {
+  height: 18px;
+  resize: none;
+  -webkit-transition: all 333ms ease-in-out;
+  -moz-transition: all 333ms ease-in-out;
+  -o-transition: all 333ms ease-in-out;
+  -ms-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+}
+form .field input[type="text"]:focus, form .field input[type="text"].focused,
+form .field textarea:focus,
+form .field textarea.focused {
+  outline: none;
+}
+form .field input[type="text"]:focus#msg, form .field input[type="text"].focused#msg,
+form .field textarea:focus#msg,
+form .field textarea.focused#msg {
+  padding-bottom: 150px;
+}
+form .field input[type="text"]:focus + label, form .field input[type="text"].focused + label,
+form .field textarea:focus + label,
+form .field textarea.focused + label {
+  width: 18%;
+  background: #ffffff;
+  color: #ff9494;
+}
+form .field input[type="text"].focused + label,
+form .field textarea.focused + label {
+  color: #ffffff;
+}
+form .field:hover label {
+  width: 18%;
+  background: #ff9494;
+  color: white;
+}
+form input[type="submit"] {
+  background: #ffffff;
+  color: #ff9494;
+  -webkit-appearance: none;
+  border: none;
+  text-transform: uppercase;
+  position: relative;
+  top: 12px;
+  padding: 13px 50px;
+  font-size: 1.4em;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
+  -webkit-transition: all 333ms ease-in-out;
+  -moz-transition: all 333ms ease-in-out;
+  -o-transition: all 333ms ease-in-out;
+  -ms-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+}
+form input[type="submit"]:hover {
+  background: #ffffff;
+  color: #ff9494;
+}
+form input[type="submit"]:focus {
+  outline: none;
+  background: #ff9494;
+}
+.google-maps {
+      position: relative;
+      padding-bottom: 40%; // This is the aspect ratio
+      height: 0;
+      overflow: hidden;
+  }
+  .google-maps iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100% !important;
+      height: 100% !important;
+  }
+
+
+  a:hover, a:visited, a:link, a:active {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+/* Social Icons */
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+html{
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-o-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+/*section{
+  width: 200px;
+  margin: 0 auto;
+}*/
+
+.hide-text{
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	display: block;
+}
+
+.ease-all{
+	-webkit-transition: all 400ms ease-in-out;
+	-moz-transition: all 400ms ease-in-out;
+	-o-transition: all 400ms ease-in-out;
+	-ms-transition: all 400ms ease-in-out;
+	transition: all 400ms ease-in-out;
+}
+
+.social{
+  grid-row-start: 2;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+	/*height: 10em;*/
+  list-style-type: none;
+  margin-top: 100px;
+  padding: 1em;
+  text-align: center;
+}
+
+
+.social li a{
+	display: table-column;
+	float: left;
+	width: 40px;
+	height: 40px;
+	margin: 1em;
+  margin-right: 1rem;
+  padding-top: 9px;
+	text-align: center;
+
+
+	-webkit-border-radius:20px;
+	-moz-border-radius:20px;
+	-o-border-radius:20px;
+	-ms-border-radius:20px;
+	border-radius:20px;
+
+	/*background-color: #222;*/
+	-webkit-box-shadow: inset 0 0 0 40px rgb(255, 198, 211);
+	-moz-box-shadow: inset 0 0 0 40px rgb(255, 198, 211);
+	-o-box-shadow: inset 0 0 0 40px rgb(255, 198, 211);
+	-ms-box-shadow: inset 0 0 0 40px rgb(255, 198, 211);
+	box-shadow: inset 0 0 0 40px rgb(255, 198, 211);
+
+	color: #fff;
+}
+
+.social li a:hover{
+	-webkit-box-shadow: inset 0 0 0 3px #f1b7e4;
+	-moz-box-shadow: inset 0 0 0 3px #f1b7e4;
+	-o-box-shadow: inset 0 0 0 3px #f1b7e4;
+	-ms-box-shadow: inset 0 0 0 3px #f1b7e4;
+	box-shadow: inset 0 0 0 3px #f1b7e4;
+
+	color: #f1b7e4;
+}
+
+
+/* Menú */
+
+
+.menu{
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 25px;
+  color: black;
+  /* grid-row-start: 2;
+  grid-column-start: 12;*/
+  position: fixed;
+  position: -webkit-fixed;
+  right: 0;
+  padding-left: 70%;
+  padding-right: 10%;
+  padding-top: 120px;
+  list-style-type: none;
+  text-align: right;
+}
+
+
+.menu li a{
+	width: 40px;
+	height: 40px;
+  padding-top: 6px;
+}
+
+.menu li a:hover{
+
+	color: #f1b7e4;
+}
