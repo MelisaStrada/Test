@@ -1,0 +1,297 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Untitled Document</title>
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+<style>
+.wrapper {
+	display: grid;
+	grid-template-columns: 200px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 200px;
+	grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+	grid-gap: 5px;
+}
+body {
+	display: flex;
+	justify-content: center;
+	font-family: 'Titillium Web', sans-serif;
+}
+a:hover, a:visited, a:link, a:active {
+	text-decoration: none !important;
+	color: inherit;
+}
+/* Social Icons */
+
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html {
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-o-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+/*section{
+  width: 200px;
+  margin: 0 auto;
+}*/
+.redessociales {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 5;
+}
+.hide-text {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	display: block;
+}
+.ease-all {
+	-webkit-transition: all 400ms ease-in-out;
+	-moz-transition: all 400ms ease-in-out;
+	-o-transition: all 400ms ease-in-out;
+	-ms-transition: all 400ms ease-in-out;
+	transition: all 400ms ease-in-out;
+}
+.social {
+	grid-row-start: 2;
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	/*height: 10em;*/
+	list-style-type: none;
+	margin-top: 100px;
+	padding: 1em;
+	text-align: center;
+}
+.social li a {
+	display: table-column;
+	float: left;
+	width: 40px;
+	height: 40px;
+	margin: 1em;
+	margin-right: 1rem;
+	padding-top: 9px;
+	text-align: center;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-o-border-radius: 20px;
+	-ms-border-radius: 20px;
+	border-radius: 20px;
+	/*background-color: #222;*/
+	-webkit-box-shadow: inset 0 0 0 40px rgb(255, 198, 211);
+	-moz-box-shadow: inset 0 0 0 40px rgb(255, 198, 211);
+	-o-box-shadow: inset 0 0 0 40px rgb(255, 198, 211);
+	-ms-box-shadow: inset 0 0 0 40px rgb(255, 198, 211);
+	box-shadow: inset 0 0 0 40px rgb(255, 198, 211);
+	color: #fff;
+}
+.social li a:hover {
+	-webkit-box-shadow: inset 0 0 0 3px #f1b7e4;
+	-moz-box-shadow: inset 0 0 0 3px #f1b7e4;
+	-o-box-shadow: inset 0 0 0 3px #f1b7e4;
+	-ms-box-shadow: inset 0 0 0 3px #f1b7e4;
+	box-shadow: inset 0 0 0 3px #f1b7e4;
+	color: #f1b7e4;
+}
+/* Menú */
+
+.menu {
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 25px;
+	color: black;
+	/* grid-row-start: 2;
+  grid-column-start: 12;*/
+	/*position: fixed;
+	position: -webkit-fixed;
+	right: 0;
+	padding-left: 70%;
+	padding-right: 10%;
+	padding-top: 120px; */
+	list-style-type: none;
+	text-align: right;
+	grid-column-start: 12;
+	grid-column-end: 13;
+	grid-row-start: 2;
+	grid-row-end: 5;
+}
+.menu ul {
+	position: fixed;
+	list-style: none;
+}
+.menu li a {
+	width: 40px;
+	height: 40px;
+	padding-top: 8px;
+}
+.menu li a:hover {
+	color: #f1b7e4;
+}
+.box1 {
+	grid-column-start: 2;
+	grid-column-end: 12;
+	grid-row-start: 5;
+	grid-row-end: 8;
+}
+.box2 {
+	grid-column-start: 2;
+	grid-column-end: 12;
+	grid-row-start: 9;
+	grid-row-end: 12;
+}
+.box3 {
+	grid-column-start: 2;
+	grid-column-end: 12;
+	grid-row-start: 13;
+	grid-row-end: 16;
+}
+.box4 {
+	grid-column-start: 2;
+	grid-column-end: 12;
+	grid-row-start: 17;
+	grid-row-end: 20;
+}
+.box {
+	-webkit-transition: all;
+	-o-transition: all;
+	transition: all;
+	-webkit-transition-duration: 500ms;
+	transition-duration: 500ms;
+	cursor: pointer;
+	position: relative;
+}
+.box .front {
+	padding: 40px;
+	height: 100%;
+	width: 50%;
+	position: absolute;
+	background-image: url("img/work.jpg");
+	z-index: 1;
+}
+.box h2, .box div.text {
+	-webkit-transition: all;
+	-o-transition: all;
+	transition: all;
+	-webkit-transition-duration: 500ms;
+	transition-duration: 500ms;
+}
+.box div.text {
+	opacity: 1;
+	z-index: 0;
+	padding: 40px;
+	height: 100%;
+	width: 50%;
+	position: absolute;
+
+	opacity: 1;
+	background-color: #ffeaea;
+	margin-left: 50%;
+}
+.box:hover {
+}
+.box:hover div.text {
+	opacity: 1;
+	background-color: #ffeaea;
+	margin-left: 50%;
+}
+.box:hover h2 {
+	font-size:50px;
+}
+.box h2 {
+	font-size: 32px;
+}
+.overlay {
+	position: fixed;
+	background-color: rgba(0,0,0,.5);
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	z-index:2;
+	display: none;
+}
+.overlay > div {
+	background-color: #fff;
+	position: fixed;
+	width: 700px;
+	left: calc(50% - 350px);
+	max-width: 100%;
+	max-height: 100%;
+	top: 10%;
+}
+.overlay > div > img {
+	width: 100%;
+}
+.overlay > div > h3 {
+	margin: 0px;
+	padding: 15px;
+	font-size: 18px;
+}
+</style>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" language="javascript"></script>
+</head>
+
+<body>
+<div class="wrapper">
+  <div class="redessociales">
+    <section>
+      <ul class="social">
+        <li> <a class="ease-all" href="#" target="_blank"><i class="fab fa-facebook-f"></i><span class="hide-text">Facebook</span></a> </li>
+        <li> <a class="ease-all" href="#"><i class="fab fa-twitter"></i><span class="hide-text">Twitter</span></a> </li>
+        <li> <a class="ease-all" href="#" target="_blank"><i class="fab fa-google-plus"></i><span class="hide-text">Google Plus</span></a> </li>
+      </ul>
+    </section>
+  </div>
+  <div class="menu">
+    <ul>
+      <li> <a href="#">About</a> </li>
+      <li> <a href="#">Portfolio</a> </li>
+      <li> <a href="#">Contact</a> </li>
+    </ul>
+  </div>
+  <div class="box1 box" data-image="https://scontent.fmex5-1.fna.fbcdn.net/v/t1.0-9/33152680_260762117826698_5653539840558366720_n.jpg?_nc_cat=0&oh=b847b0d1b1d63cbd9ca293f899963df3&oe=5B892257" data-title="Coonfy by Paulina AgOr">
+    <div class="front">
+      <h2>Digital Marketing</h2>
+    </div>
+    <div class="text"> We make visual content for your social networks in order to make your brand known, we combine marketing with design and the result is extraordinary. </div>
+  </div>
+  <div class="box2 box" data-image="file:///Users/paulinaaguilar/Documents/GitHub/Test/img/layout.jpeg" data-title="Bar Minam by Linda">
+    <div class="front">
+      <h2>Web Design</h2>
+    </div>
+    <div class="text">As soon as you send us that information and complete content, we will have your page ready in 10 business days. We will focus on a page that is fully functional and responsive.</div>
+  </div>
+  <div class="box3 box" data-image="file:///Users/paulinaaguilar/Documents/GitHub/Test/img/frida_instagram.jpg" data-title="Del Fuerte Campaign by Rita">
+    <div class="front">
+      <h2>Branding</h2>
+    </div>
+    <div class="text">Involves the marketing practice of actively shaping a distinctive brand. Your brand identity is what makes you instantly recognizable to your customers. Your audience will associate your brand identity with your product or service, and that identity is what forges the connection between you and your customers.</div>
+  </div>
+  <div class="box4 box" data-image="http://verticalsight.com/wp-content/uploads/2015/12/Vertical-Sight-Web-Design-Trend-4.png" data-title="Example">
+    <div class="front">
+      <h2>Editorial Design</h2>
+    </div>
+    <div class="text"> Editorial design is one interesting field that is combining our capabilities for clever compositions, editorial layout, and creative typography. The editorial designer is playing very important role in the path that the information is shared, presented and understood, and also in performing the last function</div>
+  </div>
+</div>
+</body>
+<script>
+	$(document).on('click','.overlay',function(){//entra funcion al dar click al overlay
+		$(this).fadeOut(function(){ // se oculta con animación
+			$(this).remove(); // se elimina del código
+		});
+	});
+	$('.box').on('click',function(){ // entra funcion al dar click a la caja
+		image = $(this).attr('data-image'); // se trae la imagen asignada en el atributo data-image
+		title = $(this).attr('data-title');// se trae el titulo asignado en el atributo data-title
+		$('body').append($('<div/>').addClass('overlay')); // se agrega el contenedor overlay al body
+		$('.overlay').append('<div />'); // se agrega el contenedor del popup
+		$('.overlay > div').html('<img src="'+image+'"><h3>'+title+'</h3>'); // se agrega imagen y titulo
+		$('.overlay').fadeIn(); // se muestra el contenido
+	});
+</script>
+
+</html>
